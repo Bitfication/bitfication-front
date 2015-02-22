@@ -3,7 +3,7 @@ en:
     all:
       name: All currencies
     btc:
-      name: Bitcoin      
+      name: Bitcoin
       link: http://www.bitcoin.org/
     eur:
       name: Euro

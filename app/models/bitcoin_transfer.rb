@@ -1,6 +1,6 @@
 class BitcoinTransfer < Transfer
   WITHDRAW_COMMISSION_RATE = BigDecimal("0.01")
-  
+
   attr_accessible :address
 
   validates :address,
@@ -17,26 +17,26 @@ class BitcoinTransfer < Transfer
 
   def execute
     # TODO : Implement instant internal transfer
-    
+
     # If admin has confirmed & coins available in wallet
     #debugger
     if bt_tx_id.blank? && processed? && (Bitcoin::Client.instance.get_balance >= amount.abs)
       update_attribute(:bt_tx_id, Bitcoin::Client.instance.send_to_address(address, amount.abs))
       process!
-    end    
-    
+    end
+
   end
-  
+
   def withdrawal_after_fee
-    
+
     self.amount
-    
+
   end
-  
+
   def deposit_after_fee
-    
+
     self.amount
-    
+
   end
 end
 

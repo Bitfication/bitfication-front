@@ -22,12 +22,6 @@ fr:
         your_orders: Ordres d'échange
         order_book: Offres en cours
         trade_history: Historique d'échanges
-      admin:
-        main: Administration
-        transfers: Transferts
-        users: Utilisateurs
-        information: Informations
-        pending_transfers: Opérations en attente
       help:
         main: Aide
         faq: Foire aux questions
@@ -38,7 +32,7 @@ fr:
         terms_of_service: Conditions d'utilisation
       ecommerce:
         main: E-commerce
-        
+
   invoices:
     new:
       create_invoice: Créer une facture
@@ -105,7 +99,7 @@ fr:
       error:
         one: "Une erreur empêche votre ordre d'être passé :"
         other: "%{count} erreurs empêchent votre ordre d'être passé :"
-        
+
   trades:
     index:
       title: Historique
@@ -128,7 +122,7 @@ fr:
             <li>Nous pouvons recevoir des virements dans une grande variété de devises,</li>
             <li>Des frais peuvent s'appliquer pour les virements non SEPA, n'hésitez-pas à nous contacter</li>
           </ul>
-        </p> 
+        </p>
         "
       bic: BIC
       account_holder: Titulaire du compte
@@ -172,7 +166,7 @@ fr:
       change_password: Changement de mot de passe
       submit: Enregistrer
       password_updated: Votre mot de passe a été changé avec succès
-      
+
   yubikeys:
     index:
       create: Associer une Yubikey à votre compte
@@ -195,7 +189,7 @@ fr:
     unlocks:
       new:
         resend: Envoyer les instructions de déverrouillage
-        
+
   transfers:
     index:
       details: Détails de la transaction
@@ -234,7 +228,7 @@ fr:
     list:
       delete: Supprimer
       confirm: Êtes-vous certain(e) de vouloir supprimer ce compte?
-      
+
   static_pages:
     show:
       last_modification_at: "Date de dernière modification : %{updated_at}"
@@ -254,7 +248,7 @@ fr:
       someone_wrote: %{who} avez écrit, il y a %{when}
       you: Vous
       reopen : Rouvrir le ticket
-      close: Fermer le ticket      
+      close: Fermer le ticket
 
   informations:
     welcome:
@@ -272,4 +266,3 @@ fr:
         other: Vous avez %{count} tickets en cours.
       open_a_ticket: Ouvrir un nouveau ticket
       view_tickets: Voir tous les tickets
-    

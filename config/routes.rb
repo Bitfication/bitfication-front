@@ -52,32 +52,6 @@ BitcoinBank::Application.routes.draw do
   match '/third_party_callbacks/:action',
     :controller => :third_party_callbacks
 
-  namespace :admin do
-    %w{ announcements yubikeys static_pages currencies tickets comments }.each { |r| resources(r.to_sym) {as_routes} }
-
-    resources :pending_transfers do
-      as_routes
-      
-      member do
-        post :process_tx, :cancel_tx
-      end
-    end
-    
-    resources :users do
-      as_routes
-      
-      member do
-        get :balances
-      end
-      
-      resources :account_operations do
-        as_routes
-      end
-    end
-    
-    match '/balances', :to => 'informations#balances', :as => :balances
-  end
-  
   match '/qrcode/:data.png' => 'qrcodes#show', :as => :qrcode
   
   match '/order_book' => 'trade_orders#book'

@@ -35,12 +35,6 @@ pt:
         your_orders: Ordens
         order_book: Order Book
         trade_history: Histórico
-      admin:
-        main: Admin
-        transfers: Transferências
-        users: Uuários
-        information: Informações
-        pending_transfers: Transferências pendentes
       help:
         main: Ajuda
         faq: FAQ
@@ -156,8 +150,8 @@ pt:
       account_holder: Titular da Conta
       iban: IBAN
       bank: Banco
-      ag: 
-      cc: 
+      ag:
+      cc:
       cnpj: CNPJ
       cpf: CPF
       comment: Comentário
@@ -228,7 +222,6 @@ pt:
       change_password: Mude a sua senha
       submit: Enviar
       password_updated: A sua senha foi atualizada com sucesso
-      
 
   yubikeys:
     index:
@@ -252,8 +245,6 @@ pt:
     unlocks:
       new:
         resend: Enviar instruções de desbloqueio
-  
-     
 
   transfers:
     index:
@@ -265,7 +256,7 @@ pt:
       state:
         processed: Processado
         pending: Pendente
-        cancelled: Terminado 
+        cancelled: Terminado
     new:
       title: Retirada de Fundos
       body_html: "
@@ -316,7 +307,7 @@ pt:
       you: Você
       reopen : Reabrir o ticket
       close: Fechar o ticket
-    
+
   informations:
     welcome:
       download: Download do Bitcoin 0.10.0
